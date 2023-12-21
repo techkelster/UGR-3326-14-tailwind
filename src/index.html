@@ -3,38 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3fcd3104bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="my_title">Junior Software Engineer</div>
-      <nav>
-        <ul>
-          <li><a href="whoami.html">Who am I</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li> <a href="booksiread.html">Books I read</a></li>
-          <li><a href="belifs.html">Belifs</a></li>
-          <li><a href="hobby.html">Hobby</a></li>
+      <div class="index-top">
+        <i class="toggle fas fa-times" id="dismiss" onclick="toggleMenu()"></i>
+        <div class="my_title">Junior Software Engineer</div>
+      </div>
+      <nav class="index-nav">
+        <ul id="nav-home">
+          <li class="nav-li-item"><a href="whoami.html">Who am I</a></li>
+          <li class="nav-li-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-li-item">
+            <a href="booksiread.html">Books I read</a></li
+          >
+          <li class="nav-li-item"><a href="belifs.html">beliefs</a></li>
+          <li class="nav-li-item"><a href="hobby.html">Hobby</a></li>
         </ul>
       </nav>
     </header>
     <section class="Tech_news">
-      <h2>head line from tech news api</h2>
-      <figure>
-        <img
-          src="images/tech.jpeg"
-          alt="The tech news image from API"
-          width="500"
-        />
-        <figcaption>head line from tech news api</figcaption>
-      </figure>
+      <h2 class="main-news-title">The World Of Tech</h2>
+      <div class="the_news">
+        <article class=".news-container">
+          <h3 class="news-headline">
+            <a href="#" id="news-headline"
+              >Breakthrough in AI: Self-Learning Algorithms Redefine Machine
+              Intelligence</a
+            >
+          </h3>
+          <figure>
+            <img
+              src="images/tech.jpeg"
+              alt="The tech news image from API"
+              width="100%"
+              id="news-image"
+            />
+          </figure>
+        </article>
+
+        <!-- Arrows and Dots for Image Sliding Direction -->
+        <div class="slideshow-controls">
+          <i class="fas fa-chevron-left lef" onclick="makeupdate()"></i>
+          <!-- Left Arrow -->
+          <i class="fas fa-chevron-right ryt" onclick="makeupdate()"></i>
+          <!-- Right Arrow -->
+          <div class="dots-container">
+            <span class="dot" onclick="makeupdate()"></span>
+            <span class="dot" onclick="makeupdate()"></span>
+            <span class="dot" onclick="makeupdate()"></span>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
-      <div class="my_socials">
-        <span>Facebook</span>
-        <span>Instagram</span>
+      <div class="footer-content">
+        <div class="my_socials">
+          <a
+            href="https://www.facebook.com/your-facebook-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-facebook fa-3x"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/your-instagram-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-instagram fa-3x"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-linkedin fa-3x"></span>
+          </a>
+          <a
+            href="https://github.com/your-github-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-github fa-3x"></span>
+          </a>
+          <a
+            href="https://www.youtube.com/c/your-youtube-channel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fa-brands fa-youtube fa-3x"></span>
+          </a>
+          <!-- Add more social media icons and links as needed -->
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Me</h3>
+          <p
+            >Email:
+            <a href="mailto:techkelster@gmail.com">techkelster@gmail.com</a></p
+          >
+          <p>Phone: +251966072233 </p>
+          <!-- Add more contact information as needed -->
+        </div>
       </div>
-      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </footer>
+    <div class="copyright">
+      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

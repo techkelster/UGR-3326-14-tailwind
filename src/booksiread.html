@@ -4,49 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books I Read</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3fcd3104bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="button"
-          ><a href="index.html" title="going to home">Back</a></div
-        >
-        <h1>Books I Read</h1>
+      <nav class="other-nav">
+        <p
+          ><a href="index.html" title="going to home"
+            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
+        ></p>
+        <p>Books I Read</p>
+        <p class="spaceholder"></p>
       </nav>
     </header>
     <main>
-      <div class="book">
-        <img
-          src="images/booksiread.jpeg"
-          alt="the book with pages to look at"
-          width="500"
-        />
-        <button>Read</button>
+      <div class="books">
+        <article class="books-container">
+          <figure>
+            <img
+              src="images/booksiread.jpeg"
+              alt="mobile project"
+              width="100%"
+              id="bo-img"
+            />
+          </figure>
+        </article>
+
+        <!-- Arrows and Dots for Image Sliding Direction -->
+        <div class="slideshow-controls">
+          <div class="dots-container">
+            <span class="dot" onclick="slideShow(0, 'books')"></span>
+            <span class="dot" onclick="slideShow(1, 'books')"></span>
+            <span class="dot" onclick="slideShow(2, 'books')"></span>
+          </div>
+        </div>
       </div>
-      <section class="book summary">
+
+      <section class="book-summary">
         <h2>Summary</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam esse
-          atque ipsum tenetur aliquam, animi exercitationem magni sed, quaerat
-          rerum a omnis quis blanditiis perferendis ratione doloribus eius?
-          Voluptates, expedita.
+        <p id="bo-sum">
+          "Rich Dad Poor Dad" is a personal finance and self-help book written
+          by Robert T. Kiyosaki. The book, published in 1997, contrasts the
+          financial philosophies and practices of two father figures in the
+          author's life: his biological father (referred to as "Poor Dad") and
+          the father of his childhood best friend (referred to as "Rich Dad").
         </p>
-        <p
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quis
-          non eum hic dolor ratione excepturi exercitationem tenetur doloremque
-          fuga nam corporis voluptatum, recusandae, vero ex? Tempora officiis
-          voluptate molestiae?</p
-        >
+        <div class="read">
+          <button class="btn btn_read"
+            ><a
+              href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194"
+              id="bo-read"
+              target="_blank"
+              >Read</a
+            ></button
+          >
+        </div>
       </section>
     </main>
 
     <footer>
-      <div class="my_socials">
-        <span>Facebook</span>
-        <span>Instagram</span>
-        <span>Telegram</span>
+      <div class="footer-content">
+        <div class="my-socials">
+          <a
+            href="https://www.facebook.com/your-facebook-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-facebook fa-3x"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/your-instagram-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-instagram fa-3x"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-linkedin fa-3x"></span>
+          </a>
+          <a
+            href="https://github.com/your-github-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-github fa-3x"></span>
+          </a>
+          <a
+            href="https://www.youtube.com/c/your-youtube-channel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fa-brands fa-youtube fa-3x"></span>
+          </a>
+          <!-- Add more social media icons and links as needed -->
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Me</h3>
+          <p
+            >Email:
+            <a href="mailto:techkelster@gmail.com">techkelster@gmail.com</a></p
+          >
+          <p>Phone: +251966072233 </p>
+          <!-- Add more contact information as needed -->
+        </div>
       </div>
-      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </footer>
+    <div class="copyright">
+      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
