@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobby</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
@@ -11,14 +15,15 @@
     ></script>
   </head>
   <body>
-    <header>
-      <nav class="other-nav">
-        <p
-          ><a href="index.html" title="going to home"
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
-        ></p>
-        <p>My Hobby</p>
-        <p class="spaceholder"></p>
+    <header class="bg-blue-800">
+      <nav class="flex items-center justify-between p-4">
+        <a href="index.html" title="going to home" class="text-white">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <div class="flex items-center justify-between space-x-4">
+          <h1 class="text-white text-lg font-semibold">My Hobby</h1>
+        </div>
+        <div class="spaceholder"></div>
       </nav>
     </header>
     <main>
@@ -52,13 +57,15 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="bg-blue-800 text-white py-8 flex justify-center">
       <div class="footer-content">
-        <div class="my-socials">
+        <div class="my_socials">
+          <!-- Add 'text-white' to make the icons white -->
           <a
             href="https://www.facebook.com/your-facebook-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-facebook fa-3x"></span>
           </a>
@@ -66,6 +73,7 @@
             href="https://www.instagram.com/your-instagram-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-instagram fa-3x"></span>
           </a>
@@ -73,6 +81,7 @@
             href="https://www.linkedin.com/in/your-linkedin-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-linkedin fa-3x"></span>
           </a>
@@ -80,6 +89,7 @@
             href="https://github.com/your-github-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-github fa-3x"></span>
           </a>
@@ -87,25 +97,29 @@
             href="https://www.youtube.com/c/your-youtube-channel"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fa-brands fa-youtube fa-3x"></span>
           </a>
-          <!-- Add more social media icons and links as needed -->
         </div>
 
         <div class="contact-info">
-          <h3>Contact Me</h3>
+          <h3 class="text-xl font-semibold mb-4">Contact Me</h3>
           <p
             >Email:
-            <a href="mailto:techkelster@gmail.com">techkelster@gmail.com</a></p
+            <a href="mailto:techkelster@gmail.com" class="text-blue-500"
+              >techkelster@gmail.com</a
+            ></p
           >
           <p>Phone: +251966072233 </p>
-          <!-- Add more contact information as needed -->
         </div>
       </div>
     </footer>
-    <div class="copyright">
-      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
+
+    <div class="copyright bg-blue-600 text-white py-4">
+      <p class="text-center"
+        >&copy; 2023 Abdulmejd Kelil. All rights reserved.</p
+      >
     </div>
     <script src="js/script.js"></script>
   </body>

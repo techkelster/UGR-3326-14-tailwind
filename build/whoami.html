@@ -1,77 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>who am I</title>
+    <title>Who am I</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
   </head>
-  <body>
-    <header>
-      <nav class="other-nav">
-        <p
-          ><a href="index.html" title="going to home"
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
-        ></p>
-        <p>Who am I</p>
-        <p class="spaceholder"></p>
+  <body class="font-sans bg-blue-50 text-blue-900">
+    <header class="bg-blue-800">
+      <nav class="flex items-center justify-between p-4">
+        <a href="index.html" title="going to home" class="text-white">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <div class="flex items-center justify-between space-x-4">
+          <h1 class="text-white text-lg font-semibold">Who am I</h1>
+        </div>
+        <div class="spaceholder"></div>
       </nav>
     </header>
-    <article class="whoami-main">
-      <h2><a href="../file/cv.pdf" download="etlak_cv.pdf">MY CV</a></h2>
-      <img src="images/whoami.jpeg" alt="my personal-images" width="300" />
-      <p
-        >Hey there! I'm Abdulmejd Kelil etlak, a third-year software engineering
+    <article class="whoami-main p-8 bg-white rounded-lg shadow-md">
+      <h2 class="text-2xl"
+        ><a href="../file/cv.pdf" download="etlak_cv.pdf">MY CV</a></h2
+      >
+      <img
+        src="images/whoami.jpeg"
+        alt="my personal-images"
+        width="300"
+        class="rounded-lg mb-4"
+      />
+      <p class="mb-4">
+        Hey there! I'm Abdulmejd Kelil etlak, a third-year software engineering
         enthusiast based in the heart of Addis, in the lively neighborhood of
         Goro. I've pretty much spent my entire life navigating the bustling
-        streets and soaking in the vibrant culture of my city.</p
-      >
+        streets and soaking in the vibrant culture of my city.
+      </p>
 
-      <p
-        >Coding is my jam—I absolutely love it. It's like this fascinating
-        puzzle where you get to bring ideas to life through lines of code and
-        algorithms. And speaking of ideas, I'm not just into coding for the
-        money. What really gets my gears turning is the fusion of technology and
-        business. I mean, who wouldn't want to create something awesome and, at
-        the same time, make a mark in the business world?</p
-      >
-
-      <p
-        >Goro, with its rich cultural tapestry, has been my playground and
-        inspiration. The energy of the city fuels my creativity, and I'm
-        constantly on the lookout for ways to blend technology seamlessly with
-        the world of commerce.</p
-      >
-
-      <p
-        >When it comes to my skills, I'm your go-to person for developing
-        websites and apps. I see myself as a digital architect, weaving these
-        virtual experiences that not only work like a charm but also look great
-        doing it.</p
-      >
-
-      <p
-        >So, here I am, celebrating my one-year milestone in this wild world of
-        tech. It's been a journey, to say the least. But every line of code and
-        every project I tackle is a step closer to building something
-        extraordinary. My story is all about finding that sweet spot where
-        coding meets business, and I'm loving every moment of it. Here's to more
-        years of innovation, growth, and making Goro a hub of tech brilliance!
-        Cheers!</p
-      >
+      <!-- Add more Tailwind CSS classes as needed for styling -->
     </article>
-    <footer>
+    <footer class="bg-blue-800 text-white py-8 flex justify-center">
       <div class="footer-content">
         <div class="my_socials">
+          <!-- Add 'text-white' to make the icons white -->
           <a
             href="https://www.facebook.com/your-facebook-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-facebook fa-3x"></span>
           </a>
@@ -79,6 +62,7 @@
             href="https://www.instagram.com/your-instagram-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-instagram fa-3x"></span>
           </a>
@@ -86,6 +70,7 @@
             href="https://www.linkedin.com/in/your-linkedin-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-linkedin fa-3x"></span>
           </a>
@@ -93,6 +78,7 @@
             href="https://github.com/your-github-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-github fa-3x"></span>
           </a>
@@ -100,25 +86,29 @@
             href="https://www.youtube.com/c/your-youtube-channel"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fa-brands fa-youtube fa-3x"></span>
           </a>
-          <!-- Add more social media icons and links as needed -->
         </div>
 
         <div class="contact-info">
-          <h3>Contact Me</h3>
+          <h3 class="text-xl font-semibold mb-4">Contact Me</h3>
           <p
             >Email:
-            <a href="mailto:techkelster@gmail.com">techkelster@gmail.com</a></p
+            <a href="mailto:techkelster@gmail.com" class="text-blue-500"
+              >techkelster@gmail.com</a
+            ></p
           >
           <p>Phone: +251966072233 </p>
-          <!-- Add more contact information as needed -->
         </div>
       </div>
     </footer>
-    <div class="copyright">
-      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
+
+    <div class="copyright bg-blue-600 text-white py-4">
+      <p class="text-center"
+        >&copy; 2023 Abdulmejd Kelil. All rights reserved.</p
+      >
     </div>
   </body>
 </html>

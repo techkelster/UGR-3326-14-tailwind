@@ -1,74 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
-      <div class="index-top">
-        <i class="toggle fas fa-times" id="dismiss" onclick="toggleMenu()"></i>
-        <div class="my_title">Junior Software Engineer</div>
+
+  <body class="font-sans">
+    <!-- Add the 'font-sans' class to use a sans-serif font -->
+
+    <header class="bg-blue-800 text-white">
+      <div class="flex items-center justify-center p-4">
+        <div class="block md:hidden mr-10">
+          <i
+            class="toggle fas fa-times"
+            id="dismiss"
+            onclick="toggleMenu()"
+          ></i>
+        </div>
+        <div class="text-2xl font-semibold">Junior Software Engineer</div>
       </div>
-      <nav class="index-nav">
-        <ul id="nav-home">
-          <li class="nav-li-item"><a href="whoami.html">Who am I</a></li>
-          <li class="nav-li-item"><a href="projects.html">Projects</a></li>
-          <li class="nav-li-item">
-            <a href="booksiread.html">Books I read</a></li
-          >
-          <li class="nav-li-item"><a href="belifs.html">beliefs</a></li>
-          <li class="nav-li-item"><a href="hobby.html">Hobby</a></li>
+      <nav class="bg-blue-800 p-4">
+        <ul id="nav-home" class="flex flex-col items-start space-y-2">
+          <li class="nav-li-item bg-blue-500 w-40">
+            <a
+              href="whoami.html"
+              class="text-white hover:text-gray-800 transition duration-300 py-2 px-4 block rounded-full"
+              >Who am I</a
+            >
+          </li>
+          <li class="nav-li-item bg-blue-500 w-40">
+            <a
+              href="projects.html"
+              class="text-white hover:text-gray-800 transition duration-300 py-2 px-4 block rounded-full"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-li-item bg-blue-500 w-40">
+            <a
+              href="booksiread.html"
+              class="text-white hover:text-gray-800 transition duration-300 py-2 px-4 block rounded-full"
+              >Books I read</a
+            >
+          </li>
+          <li class="nav-li-item bg-blue-500 w-40">
+            <a
+              href="belifs.html"
+              class="text-white hover:text-gray-800 transition duration-300 py-2 px-4 block rounded-full"
+              >Beliefs</a
+            >
+          </li>
+          <li class="nav-li-item bg-blue-500 w-40">
+            <a
+              href="hobby.html"
+              class="text-white hover:text-gray-800 transition duration-300 py-2 px-4 block rounded-full"
+              >Hobby</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="Tech_news">
-      <h2 class="main-news-title">The World Of Tech</h2>
-      <div class="the_news">
-        <article class=".news-container">
-          <h3 class="news-headline">
+    <section
+      class="Tech_news bg-blue-100 p-8 w-8/12 mr-auto ml-auto text-center mt-9 mb-9 relative"
+    >
+      <h2 class="text-4xl font-semibold mb-8">The World Of Tech</h2>
+      <div class="news-card">
+        <article class="news-container">
+          <h3 class="text-2xl font-semibold mb-4">
             <a href="#" id="news-headline"
               >Breakthrough in AI: Self-Learning Algorithms Redefine Machine
               Intelligence</a
             >
           </h3>
-          <figure>
+          <figure class="flex justify-center">
             <img
               src="images/tech.jpeg"
               alt="The tech news image from API"
-              width="100%"
+              class="w-80"
               id="news-image"
             />
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
-          <i class="fas fa-chevron-left lef" onclick="makeupdate()"></i>
-          <!-- Left Arrow -->
-          <i class="fas fa-chevron-right ryt" onclick="makeupdate()"></i>
-          <!-- Right Arrow -->
+        <div class="slideshow-controls mt-4">
+          <i
+            class="fas fa-chevron-left lef absolute top-1/2 left-0 right-0.8 bottom-0"
+            onclick="makeupdate()"
+          ></i>
+          <i
+            class="fas fa-chevron-right ryt absolute top-2/4 left-0.8 right-0 bottom-0"
+            onclick="makeupdate()"
+          ></i>
           <div class="dots-container">
-            <span class="dot" onclick="makeupdate()"></span>
-            <span class="dot" onclick="makeupdate()"></span>
-            <span class="dot" onclick="makeupdate()"></span>
+            <span
+              class="dot"
+              onclick="makeupdate()"
+              class="fas fa-ellipsis-h"
+            ></span>
+            <span
+              class="dot"
+              onclick="makeupdate()"
+              class="fas fa-ellipsis-h"
+            ></span>
+            <span
+              class="dot"
+              onclick="makeupdate()"
+              class="fas fa-ellipsis-h"
+            ></span>
           </div>
         </div>
       </div>
     </section>
-    <footer>
+
+    <footer class="bg-blue-800 text-white py-8 flex justify-center">
       <div class="footer-content">
         <div class="my_socials">
+          <!-- Add 'text-white' to make the icons white -->
           <a
             href="https://www.facebook.com/your-facebook-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-facebook fa-3x"></span>
           </a>
@@ -76,6 +138,7 @@
             href="https://www.instagram.com/your-instagram-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-instagram fa-3x"></span>
           </a>
@@ -83,6 +146,7 @@
             href="https://www.linkedin.com/in/your-linkedin-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-linkedin fa-3x"></span>
           </a>
@@ -90,6 +154,7 @@
             href="https://github.com/your-github-profile"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fab fa-github fa-3x"></span>
           </a>
@@ -97,25 +162,29 @@
             href="https://www.youtube.com/c/your-youtube-channel"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-white"
           >
             <span class="fa-brands fa-youtube fa-3x"></span>
           </a>
-          <!-- Add more social media icons and links as needed -->
         </div>
 
         <div class="contact-info">
-          <h3>Contact Me</h3>
+          <h3 class="text-xl font-semibold mb-4">Contact Me</h3>
           <p
             >Email:
-            <a href="mailto:techkelster@gmail.com">techkelster@gmail.com</a></p
+            <a href="mailto:techkelster@gmail.com" class="text-blue-500"
+              >techkelster@gmail.com</a
+            ></p
           >
           <p>Phone: +251966072233 </p>
-          <!-- Add more contact information as needed -->
         </div>
       </div>
     </footer>
-    <div class="copyright">
-      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
+
+    <div class="copyright bg-blue-600 text-white py-4">
+      <p class="text-center"
+        >&copy; 2023 Abdulmejd Kelil. All rights reserved.</p
+      >
     </div>
     <script src="js/script.js"></script>
   </body>
