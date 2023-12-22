@@ -26,31 +26,37 @@
         <div class="spaceholder"></div>
       </nav>
     </header>
-    <main>
-      <div class="books">
-        <article class="books-container">
+    <main class="mx-auto max-w-2xl my-8">
+      <div class="books flex flex-col md:space-x-4 items-center">
+        <article class="books-container w-80">
           <figure>
             <img
               src="images/booksiread.jpeg"
               alt="mobile project"
-              width="100%"
+              class="w-50"
               id="bo-img"
             />
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
-          <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'books')"></span>
-            <span class="dot" onclick="slideShow(1, 'books')"></span>
-            <span class="dot" onclick="slideShow(2, 'books')"></span>
+        <div class="slideshow-controls mt-4 md:mt-0">
+          <div class="dots-container flex space-x-2">
+            <span class="dot cursor-pointer" onclick="slideShow(0, 'books')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
+            <span class="dot cursor-pointer" onclick="slideShow(1, 'books')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
+            <span class="dot cursor-pointer" onclick="slideShow(2, 'books')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
           </div>
         </div>
       </div>
 
-      <section class="book-summary bg-blue-200 text-blue-800">
-        <h2>Summary</h2>
+      <section class="book-summary bg-blue-200 text-blue-800 mt-4 p-4 rounded">
+        <h2 class="text-xl font-semibold mb-2">Summary</h2>
         <p id="bo-sum">
           "Rich Dad Poor Dad" is a personal finance and self-help book written
           by Robert T. Kiyosaki. The book, published in 1997, contrasts the
@@ -58,15 +64,17 @@
           author's life: his biological father (referred to as "Poor Dad") and
           the father of his childhood best friend (referred to as "Rich Dad").
         </p>
-        <div class="read">
-          <button class="btn btn_read"
-            ><a
+        <div class="read mt-4">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            <a
               href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194"
               id="bo-read"
               target="_blank"
               >Read</a
-            ></button
-          >
+            >
+          </button>
         </div>
       </section>
     </main>

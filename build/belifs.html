@@ -27,7 +27,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="mx-auto max-w-2xl my-40">
       <div class="ideas">
         <div class="quote-container">
           <blockquote class="quote bg-blue-200 text-blue-800" id="bel-desc">
@@ -38,15 +38,22 @@
         </div>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
+        <div class="slideshow-controls flex items-center justify-center mt-4">
           <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'beliefs')"></span>
-            <span class="dot" onclick="slideShow(1, 'beliefs')"></span>
-            <span class="dot" onclick="slideShow(2, 'beliefs')"></span>
+            <span class="dot" onclick="slideShow(0, 'beliefs')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
+            <span class="dot" onclick="slideShow(1, 'beliefs')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
+            <span class="dot" onclick="slideShow(2, 'beliefs')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
           </div>
         </div>
       </div>
     </main>
+
     <footer class="bg-blue-800 text-white py-8 flex justify-center">
       <div class="footer-content">
         <div class="my_socials">

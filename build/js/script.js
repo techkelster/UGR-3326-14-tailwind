@@ -1,6 +1,6 @@
 // Ensure a whole number for array index
 let apiUrl =
-  "https://newsdata.io/api/1/news?apikey=pub_34975c7bd5a45c6abfdd9907e741d36b48ed5&q=tech";
+  "https://newsdata.io/api/1/news?apikey=pub_34975c7bd5a45c6abfdd9907e741d36b48ed5&q=technology";
 let the_link = document.getElementById("news-headline");
 let the_image = document.getElementById("news-image");
 let home_nav = document.getElementById("nav-home");

@@ -26,27 +26,34 @@
         <div class="spaceholder"></div>
       </nav>
     </header>
-    <main>
+    <main class="mx-auto max-w-2xl my-8 bg-blue-200">
       <div class="hobby">
-        <article class="hobby-co">
-          <figure>
+        <article class="hobby-co w-80">
+          <figure class="">
             <img
               id="ho-img"
               src="images/hobby.jpeg"
-              alt="mobile project"
-              width="100%"
+              alt="hobby project"
+              class=""
             />
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
-          <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'hobby')"></span>
-            <span class="dot" onclick="slideShow(1, 'hobby')"></span>
-            <span class="dot" onclick="slideShow(2, 'hobby')"></span>
+        <div class="slideshow-controls flex items-center justify-center mt-4">
+          <div class="dots-container flex space-x-2">
+            <span class="dot cursor-pointer" onclick="slideShow(0, 'hobby')"
+              ><i class="fa-regular fa-circle-dot"></i
+            ></span>
+            <span class="dot cursor-pointer" onclick="slideShow(1, 'hobby')"
+              ><i class="fa-regular fa-circle-dot"></i
+            ></span>
+            <span class="dot cursor-pointer" onclick="slideShow(2, 'hobby')"
+              ><i class="fa-regular fa-circle-dot"></i
+            ></span>
           </div>
         </div>
+
         <div class="hobby-des" id="ho-des">
           <p>
             Bike riding is my favorite hobby. It's a refreshing and meditative
@@ -57,6 +64,7 @@
         </div>
       </div>
     </main>
+
     <footer class="bg-blue-800 text-white py-8 flex justify-center">
       <div class="footer-content">
         <div class="my_socials">

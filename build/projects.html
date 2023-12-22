@@ -26,11 +26,16 @@
         <div class="spaceholder"></div>
       </nav>
     </header>
-    <main>
+    <main class="mx-auto max-w-2xl my-8 w-80 text-center">
       <div class="projects">
-        <article class=".project-container">
+        <article class="project-container">
           <h3 class="project-headline">
-            <a href="#" id="pro-link">Weather Mobile App</a>
+            <a
+              href="#"
+              id="pro-link"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >Weather Mobile App</a
+            >
           </h3>
           <figure>
             <img
@@ -43,25 +48,22 @@
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
-          <i
-            class="fas fa-chevron-left lef"
-            onclick="slideShow('lef', 'projects')"
-          ></i>
-          <!-- Left Arrow -->
-          <i
-            class="fas fa-chevron-right ryt"
-            onclick="slideShow('ryt', 'projects')"
-          ></i>
-          <!-- Right Arrow -->
-          <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'projects')"></span>
-            <span class="dot" onclick="slideShow(1, 'projects')"></span>
-            <span class="dot" onclick="slideShow(2, 'projects')"></span>
+        <div class="slideshow-controls flex items-center justify-center mt-4">
+          <div class="dots-container flex space-x-2">
+            <span class="dot cursor-pointer" onclick="slideShow(0, 'projects')"
+              ><i class="fa-regular fa-circle-dot"></i
+            ></span>
+            <span class="dot cursor-pointer" onclick="slideShow(1, 'projects')"
+              ><i class="fa-regular fa-circle-dot"></i
+            ></span>
+            <span class="dot cursor-pointer" onclick="slideShow(2, 'projects')"
+              ><i class="fa-regular fa-circle-dot"></i
+            ></span>
           </div>
         </div>
       </div>
     </main>
+
     <footer class="bg-blue-800 text-white py-8 flex justify-center">
       <div class="footer-content">
         <div class="my_socials">
