@@ -1,0 +1,12 @@
+{
+  "name": "ugr-3326-14",
+  "version": "1.0.0",
+  "description": "AAiT Web Course Repo",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

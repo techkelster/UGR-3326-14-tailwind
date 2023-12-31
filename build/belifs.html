@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beliefs</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/3fcd3104bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-blue-50 text-blue-900">
+    <header class="bg-blue-800">
+      <nav class="flex items-center justify-between p-4">
+        <a href="index.html" title="going to home" class="text-white">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <div class="flex items-center justify-between space-x-4">
+          <h1 class="text-white text-lg font-semibold">Beliefs</h1>
+        </div>
+        <div class="spaceholder"></div>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-2xl my-40">
+      <div class="ideas">
+        <div class="quote-container">
+          <blockquote class="quote bg-blue-200 text-blue-800" id="bel-desc">
+            "The only limit to our realization of tomorrow will be our doubts of
+            today."
+            <cite>- Franklin D. Roosevelt</cite>
+          </blockquote>
+        </div>
+
+        <!-- Arrows and Dots for Image Sliding Direction -->
+        <div class="slideshow-controls flex items-center justify-center mt-4">
+          <div class="dots-container">
+            <span class="dot" onclick="slideShow(0, 'beliefs')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
+            <span class="dot" onclick="slideShow(1, 'beliefs')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
+            <span class="dot" onclick="slideShow(2, 'beliefs')">
+              <i class="fa-regular fa-circle-dot"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-blue-800 text-white py-8 flex justify-center">
+      <div class="footer-content">
+        <div class="my_socials">
+          <!-- Add 'text-white' to make the icons white -->
+          <a
+            href="https://www.facebook.com/your-facebook-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white"
+          >
+            <span class="fab fa-facebook fa-3x"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/your-instagram-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white"
+          >
+            <span class="fab fa-instagram fa-3x"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white"
+          >
+            <span class="fab fa-linkedin fa-3x"></span>
+          </a>
+          <a
+            href="https://github.com/your-github-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white"
+          >
+            <span class="fab fa-github fa-3x"></span>
+          </a>
+          <a
+            href="https://www.youtube.com/c/your-youtube-channel"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white"
+          >
+            <span class="fa-brands fa-youtube fa-3x"></span>
+          </a>
+        </div>
+
+        <div class="contact-info">
+          <h3 class="text-xl font-semibold mb-4">Contact Me</h3>
+          <p
+            >Email:
+            <a href="mailto:techkelster@gmail.com" class="text-blue-500"
+              >techkelster@gmail.com</a
+            ></p
+          >
+          <p>Phone: +251966072233 </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright bg-blue-600 text-white py-4">
+      <p class="text-center"
+        >&copy; 2023 Abdulmejd Kelil. All rights reserved.</p
+      >
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
